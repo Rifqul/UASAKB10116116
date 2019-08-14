@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.e.uasakb"
+    android:targetSandboxVersion="2"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="26" />
+
+    <application
+        android:name="com.e.uasakb.MyApplication"
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@drawable/logouasakb"
+        android:label="UASAKB"
+        android:roundIcon="@drawable/logouasakb"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name="com.e.uasakb.KontakActivity" />
+        <activity android:name="com.e.uasakb.ProfilActivity" />
+        <activity android:name="com.e.uasakb.SplashActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.e.uasakb.MainActivity" />
+        <activity android:name="com.e.uasakb.TambahActivity" />
+        <activity android:name="com.e.uasakb.MahasiswaActivity" />
+        <activity android:name="com.e.uasakb.DetailActivity" />
+
+        <meta-data
+            android:name="android.support.VERSION"
+            android:value="26.1.0" />
+        <meta-data
+            android:name="android.arch.lifecycle.VERSION"
+            android:value="27.0.0-SNAPSHOT" />
+
+        <provider
+            android:name="com.android.tools.ir.server.InstantRunContentProvider"
+            android:authorities="com.e.uasakb.com.android.tools.ir.server.InstantRunContentProvider"
+            android:multiprocess="true" />
+    </application>
+
+</manifest>
